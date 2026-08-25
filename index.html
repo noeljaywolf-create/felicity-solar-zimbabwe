@@ -32,6 +32,7 @@ html{scroll-behavior:smooth; scroll-padding-top:84px}
 @media (prefers-reduced-motion: reduce){*{animation:none !important; transition:none !important}}
 :focus-visible{outline:2px solid #F59E0B; outline-offset:2px}
 </style>
+<noscript><style>#preloader{display:none !important}</style></noscript>
 </head>
 <body class="bg-[#F8FAFC] text-slate-900 font-sans antialiased">
 <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-navy focus:text-white focus:px-4 focus:py-2 focus:rounded-full focus:text-sm">Skip to content</a>
@@ -467,7 +468,13 @@ html{scroll-behavior:smooth; scroll-padding-top:84px}
 
 <script>
 const $=s=>document.querySelector(s);
-window.addEventListener('load',()=>{ setTimeout(()=>{ const el=$('#preloader'); el.style.opacity='0'; setTimeout(()=>el.remove(),500); }, 400); });
+function hidePreloader(){ const el=$('#preloader'); if(!el || el.dataset.done) return; el.dataset.done='1'; el.style.opacity='0'; el.style.pointerEvents='none'; setTimeout(()=>{ try{el.remove();}catch(e){} },500); }
+window.addEventListener('load',()=> setTimeout(hidePreloader,400));
+document.addEventListener('DOMContentLoaded',()=> setTimeout(hidePreloader,900));
+setTimeout(hidePreloader, 2200);
+// Emergency tap to dismiss preloader on mobile
+document.addEventListener('click', ()=>{ const el=$('#preloader'); if(el && getComputedStyle(el).opacity!=='0') hidePreloader(); }, {once:true});
+document.addEventListener('touchstart', ()=>{ const el=$('#preloader'); if(el && getComputedStyle(el).opacity!=='0') hidePreloader(); }, {once:true, passive:true});
 window.addEventListener('scroll',()=>{ const h=document.documentElement; const scrolled=(h.scrollTop/(h.scrollHeight - h.clientHeight))*100; $('#scrollBar').style.width=scrolled+'%'; const bt=$('#backTop'); if(window.scrollY>600){ bt.classList.remove('hidden'); bt.classList.add('flex'); } else { bt.classList.add('hidden'); bt.classList.remove('flex'); }},{passive:true});
 $('#backTop').onclick=()=>window.scrollTo({top:0, behavior:'smooth'});
 function toast(msg){ const wrap=$('#toastWrap'); const el=document.createElement('div'); el.className='bg-navy text-white text-sm font-semibold px-5 py-3 rounded-full shadow-xl border border-white/10 pointer-events-auto'; el.textContent=msg; wrap.appendChild(el); setTimeout(()=>{ el.style.opacity='0'; el.style.transform='translateY(-8px)'; setTimeout(()=>el.remove(),300); }, 3500); }
