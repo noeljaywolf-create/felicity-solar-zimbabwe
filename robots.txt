@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.felicitysolar.co.zw/sitemap.xml
