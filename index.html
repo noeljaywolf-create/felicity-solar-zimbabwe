@@ -12,6 +12,9 @@
 <meta property="og:image" content="assets/solar-4.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0F2342">
+<link rel="preload" as="image" href="assets/solar-1.webp" fetchpriority="high">
+<link rel="preload" as="image" href="assets/solar-4.webp">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Felicity Solar Zimbabwe (Private) Limited","url":"https://www.felicitysolar.co.zw","logo":"assets/solar-5.jpg","address":{"@type":"PostalAddress","streetAddress":"45 Glenara Avenue South, Eastlea","addressLocality":"Harare","addressCountry":"ZW"},"telephone":"+263779073333","description":"High-technology new energy enterprise — hybrid inverters, LiFePO4 storage, photovoltaic modules, solar lighting"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -103,7 +106,7 @@ html{scroll-behavior:smooth; scroll-padding-top:84px}
 
 <main id="main">
 <section class="relative min-h-[92vh] flex items-center overflow-hidden pt-16 md:pt-0">
-  <video id="heroVideo" autoplay muted loop playsinline poster="assets/solar-1.jpg" class="absolute inset-0 w-full h-full object-cover">
+  <video id="heroVideo" autoplay muted loop playsinline preload="metadata" poster="assets/solar-1.webp" class="absolute inset-0 w-full h-full object-cover">
     <source src="assets/hero-video.mp4" type="video/mp4">
   </video>
   <div class="absolute inset-0 hero-overlay"></div>
@@ -131,9 +134,9 @@ html{scroll-behavior:smooth; scroll-padding-top:84px}
       </div>
       <div class="flex items-center gap-5 mt-8 text-sm">
         <div class="flex -space-x-2">
-          <img src="assets/hero-1.jfif" class="w-9 h-9 rounded-full border-2 border-navy object-cover" alt="Felicity Solar technician">
-          <img src="assets/solar-6.jpg" class="w-9 h-9 rounded-full border-2 border-navy object-cover" alt="Felicity Solar reception">
-          <img src="assets/solar-4.jpg" class="w-9 h-9 rounded-full border-2 border-navy object-cover" alt="Solar installation in progress">
+          <img src="assets/hero-1.webp" onerror="this.onerror=null;this.src='assets/hero-1.jfif'" class="w-9 h-9 rounded-full border-2 border-navy object-cover" alt="Felicity Solar technician">
+          <img src="assets/solar-6.webp" onerror="this.onerror=null;this.src='assets/solar-6.jpg'" class="w-9 h-9 rounded-full border-2 border-navy object-cover" alt="Felicity Solar reception">
+          <img src="assets/solar-4.webp" onerror="this.onerror=null;this.src='assets/solar-4.jpg'" class="w-9 h-9 rounded-full border-2 border-navy object-cover" alt="Solar installation in progress">
         </div>
         <div class="text-white/90">
           <div class="flex items-center gap-1 text-solar"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> <span class="ml-1 font-bold text-white">4.6/5</span></div>
@@ -150,13 +153,13 @@ html{scroll-behavior:smooth; scroll-padding-top:84px}
           </div>
           <div class="mt-4 grid grid-cols-2 gap-3">
             <div class="rounded-2xl overflow-hidden bg-slate-50 border border-slate-100 p-3">
-              <img src="assets/solar-1.jpg" loading="lazy" class="w-full h-28 object-cover rounded-xl" alt="Felicity FLA 5.12kWh wall-mounted lithium battery — actual installation">
+              <img src="assets/solar-1.webp" onerror="this.onerror=null;this.src='assets/solar-1.jpg'" loading="lazy" decoding="async" class="w-full h-28 object-cover rounded-xl" alt="Felicity FLA 5.12kWh wall-mounted lithium battery — actual installation">
               <div class="mt-3 font-poppins font-semibold text-navy text-sm leading-tight">FLA 5.12kWh Wallmount</div>
               <div class="text-xs text-slate-500">LiFePO4 • 51.2V 100Ah • IP65</div>
               <div class="mt-2 flex items-center gap-2"><span class="font-bold text-navy">$1,899</span><span class="text-xs line-through text-slate-400">$2,100</span></div>
             </div>
             <div class="rounded-2xl overflow-hidden bg-slate-50 border border-slate-100 p-3">
-              <img src="assets/solar-5.jpg" loading="lazy" class="w-full h-28 object-cover rounded-xl" alt="Felicity FL-IVPL 48V hybrid inverter — product detail">
+              <img src="assets/solar-5.webp" onerror="this.onerror=null;this.src='assets/solar-5.jpg'" loading="lazy" decoding="async" class="w-full h-28 object-cover rounded-xl" alt="Felicity FL-IVPL 48V hybrid inverter — product detail">
               <div class="mt-3 font-poppins font-semibold text-navy text-sm leading-tight">FL-IVPL 10kVA Hybrid</div>
               <div class="text-xs text-slate-500">48V • 80–280V Input • 3200W PV</div>
               <div class="mt-2 flex items-center gap-2"><span class="font-bold text-navy">$1,250</span><span class="text-xs bg-solar text-navy font-bold px-1.5 py-0.5 rounded">-10%</span></div>
@@ -224,10 +227,10 @@ html{scroll-behavior:smooth; scroll-padding-top:84px}
     </div>
     <div class="relative">
       <div class="grid grid-cols-2 gap-3">
-        <img src="assets/solar-1.jpg" loading="lazy" class="rounded-[20px] h-48 w-full object-cover shadow-lg" alt="Stacked LiFePO4 battery installation — white wall-mounted units with green status indicators">
-        <img src="assets/hero-1.jfif" loading="lazy" class="rounded-[20px] h-48 w-full object-cover shadow-lg mt-6" alt="Certified Felicity Solar technician with photovoltaic module">
-        <img src="assets/solar-4.jpg" loading="lazy" class="rounded-[20px] h-56 w-full object-cover shadow-lg -mt-6" alt="Rooftop photovoltaic installation in progress — technician securing panels">
-        <img src="assets/solar-3.jpg" loading="lazy" class="rounded-[20px] h-56 w-full object-cover shadow-lg" alt="Parallel lithium battery bank with DC wiring — technical installation detail">
+        <img src="assets/solar-1.webp" onerror="this.onerror=null;this.src='assets/solar-1.jpg'" loading="lazy" decoding="async" class="rounded-[20px] h-48 w-full object-cover shadow-lg" alt="Stacked LiFePO4 battery installation — white wall-mounted units with green status indicators">
+        <img src="assets/hero-1.webp" onerror="this.onerror=null;this.src='assets/hero-1.jfif'" loading="lazy" decoding="async" class="rounded-[20px] h-48 w-full object-cover shadow-lg mt-6" alt="Certified Felicity Solar technician with photovoltaic module">
+        <img src="assets/solar-4.webp" onerror="this.onerror=null;this.src='assets/solar-4.jpg'" loading="lazy" decoding="async" class="rounded-[20px] h-56 w-full object-cover shadow-lg -mt-6" alt="Rooftop photovoltaic installation in progress — technician securing panels">
+        <img src="assets/solar-3.webp" onerror="this.onerror=null;this.src='assets/solar-3.jpg'" loading="lazy" decoding="async" class="rounded-[20px] h-56 w-full object-cover shadow-lg" alt="Parallel lithium battery bank with DC wiring — technical installation detail">
       </div>
       <div class="absolute -bottom-4 -left-2 md:-left-6 bg-navy text-white rounded-2xl px-5 py-4 shadow-xl flex items-center gap-4">
         <div class="w-12 h-12 rounded-xl bg-solar flex items-center justify-center text-navy font-extrabold text-xl">4.6</div>
@@ -250,7 +253,7 @@ html{scroll-behavior:smooth; scroll-padding-top:84px}
     <div class="mt-6 flex flex-wrap gap-2 no-print"><button data-filter="all" class="filterBtn bg-navy text-white px-5 py-2 rounded-full text-sm font-bold cursor-pointer">All</button><button data-filter="inverter" class="filterBtn bg-slate-100 hover:bg-slate-200 text-navy px-5 py-2 rounded-full text-sm font-semibold cursor-pointer">Inverters</button><button data-filter="battery" class="filterBtn bg-slate-100 hover:bg-slate-200 text-navy px-5 py-2 rounded-full text-sm font-semibold cursor-pointer">Batteries</button><button data-filter="pv" class="filterBtn bg-slate-100 hover:bg-slate-200 text-navy px-5 py-2 rounded-full text-sm font-semibold cursor-pointer">PV Modules</button><button data-filter="light" class="filterBtn bg-slate-100 hover:bg-slate-200 text-navy px-5 py-2 rounded-full text-sm font-semibold cursor-pointer">Illumination</button></div>
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mt-6">
       <div data-cat="inverter" class="productCard group bg-[#F8FAFC] rounded-[20px] border border-slate-200 overflow-hidden hover:shadow-[0_12px_30px_rgba(15,35,66,0.08)] hover:-translate-y-1 transition-all duration-200 cursor-pointer">
-        <div class="h-44 overflow-hidden relative"><img src="assets/solar-5.jpg" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Felicity FL-IVPL 48V hybrid inverter — official product graphic showing 80-280V wide input"><span class="absolute top-3 left-3 bg-navy text-white text-xs font-bold px-3 py-1 rounded-full">BESTSELLER</span></div>
+        <div class="h-44 overflow-hidden relative"><img src="assets/solar-5.webp" onerror="this.onerror=null;this.src='assets/solar-5.jpg'" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Felicity FL-IVPL 48V hybrid inverter — official product graphic showing 80-280V wide input"><span class="absolute top-3 left-3 bg-navy text-white text-xs font-bold px-3 py-1 rounded-full">BESTSELLER</span></div>
         <div class="p-5">
           <div class="w-9 h-9 rounded-xl bg-solar/15 flex items-center justify-center"><svg class="w-5 h-5 text-solar-dark" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2H10a2 2 0 00-2 2v2"/></svg></div>
           <h3 class="font-poppins font-semibold text-navy mt-3">Hybrid Inverters</h3>
@@ -260,7 +263,7 @@ html{scroll-behavior:smooth; scroll-padding-top:84px}
         </div>
       </div>
       <div data-cat="battery" class="productCard group bg-[#F8FAFC] rounded-[20px] border border-slate-200 overflow-hidden hover:shadow-[0_12px_30px_rgba(15,35,66,0.08)] hover:-translate-y-1 transition-all duration-200 cursor-pointer">
-        <div class="h-44 overflow-hidden relative"><img src="assets/solar-1.jpg" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Felicity LiFePO4 stacked battery — white wall-mounted units with orange trim and status LEDs as installed"><span class="absolute top-3 left-3 bg-eco text-white text-xs font-bold px-3 py-1 rounded-full">LiFePO4 • 10YR</span></div>
+        <div class="h-44 overflow-hidden relative"><img src="assets/solar-1.webp" onerror="this.onerror=null;this.src='assets/solar-1.jpg'" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Felicity LiFePO4 stacked battery — white wall-mounted units with orange trim and status LEDs as installed"><span class="absolute top-3 left-3 bg-eco text-white text-xs font-bold px-3 py-1 rounded-full">LiFePO4 • 10YR</span></div>
         <div class="p-5">
           <div class="w-9 h-9 rounded-xl bg-eco/10 flex items-center justify-center"><svg class="w-5 h-5 text-eco" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="7" width="18" height="10" rx="2"/><path d="M22 11v2"/><path d="M6 7v10M10 7v10M14 7v10"/></svg></div>
           <h3 class="font-poppins font-semibold text-navy mt-3">Lithium Energy Storage</h3>
@@ -270,7 +273,7 @@ html{scroll-behavior:smooth; scroll-padding-top:84px}
         </div>
       </div>
       <div data-cat="pv" class="productCard group bg-[#F8FAFC] rounded-[20px] border border-slate-200 overflow-hidden hover:shadow-[0_12px_30px_rgba(15,35,66,0.08)] hover:-translate-y-1 transition-all duration-200 cursor-pointer">
-        <div class="h-44 overflow-hidden"><img src="assets/solar-4.jpg" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Photovoltaic installation in progress — certified installer securing rooftop panels"></div>
+        <div class="h-44 overflow-hidden"><img src="assets/solar-4.webp" onerror="this.onerror=null;this.src='assets/solar-4.jpg'" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Photovoltaic installation in progress — certified installer securing rooftop panels"></div>
         <div class="p-5">
           <div class="w-9 h-9 rounded-xl bg-cyan/10 flex items-center justify-center"><svg class="w-5 h-5 text-cyan" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/><path d="M14 9h5v5"/><path d="M3 15h6v6"/></svg></div>
           <h3 class="font-poppins font-semibold text-navy mt-3">Photovoltaic Modules</h3>
@@ -280,7 +283,7 @@ html{scroll-behavior:smooth; scroll-padding-top:84px}
         </div>
       </div>
       <div data-cat="light" class="productCard group bg-[#F8FAFC] rounded-[20px] border border-slate-200 overflow-hidden hover:shadow-[0_12px_30px_rgba(15,35,66,0.08)] hover:-translate-y-1 transition-all duration-200 cursor-pointer">
-        <div class="h-44 overflow-hidden"><img src="assets/solar-2.jpg" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Outdoor field deployment — Felicity Solar exhibition with demonstration systems under canopy"></div>
+        <div class="h-44 overflow-hidden"><img src="assets/solar-2.webp" onerror="this.onerror=null;this.src='assets/solar-2.jpg'" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Outdoor field deployment — Felicity Solar exhibition with demonstration systems under canopy"></div>
         <div class="p-5">
           <div class="w-9 h-9 rounded-xl bg-navy/10 flex items-center justify-center"><svg class="w-5 h-5 text-navy" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 2.5 1.5 4.5 3 6h8c1.5-1.5 3-3.5 3-6a7 7 0 00-7-7z"/><path d="M9 18h6"/><path d="M10 22h4"/></svg></div>
           <h3 class="font-poppins font-semibold text-navy mt-3">Solar Illumination Systems</h3>
@@ -305,7 +308,7 @@ html{scroll-behavior:smooth; scroll-padding-top:84px}
   </div>
   <div class="grid md:grid-cols-3 gap-5 mt-10">
     <div class="bg-white rounded-[20px] border border-slate-200 p-6 hover:shadow-lg transition-shadow">
-      <img src="assets/solar-4.jpg" loading="lazy" class="w-full h-40 object-cover rounded-xl" alt="Residential rooftop — installer securing photovoltaic modules">
+      <img src="assets/solar-4.webp" onerror="this.onerror=null;this.src='assets/solar-4.jpg'" loading="lazy" decoding="async" class="w-full h-40 object-cover rounded-xl" alt="Residential rooftop — installer securing photovoltaic modules">
       <h3 class="font-poppins font-semibold text-navy mt-4">Residential Systems</h3>
       <p class="text-sm text-slate-500 mt-1">3–10 kVA hybrid inverters paired with 5–20 kWh LiFePO4 storage — for lighting, refrigeration, entertainment, borehole, water heating and communications during grid interruptions.</p>
       <ul class="mt-3 text-xs text-slate-600 space-y-1"><li>✓ Includes COC & ZESA-compliant DB</li><li>✓ Monitoring via Wi-Fi / App</li></ul>
@@ -313,14 +316,14 @@ html{scroll-behavior:smooth; scroll-padding-top:84px}
     </div>
     <div class="bg-navy rounded-[20px] p-6 text-white relative overflow-hidden">
       <div class="absolute -right-10 -top-10 w-40 h-40 bg-solar/20 rounded-full blur-2xl"></div>
-      <img src="assets/solar-3.jpg" loading="lazy" class="w-full h-40 object-cover rounded-xl" alt="Commercial battery bank — three parallel storage units with protected DC wiring">
+      <img src="assets/solar-3.webp" onerror="this.onerror=null;this.src='assets/solar-3.jpg'" loading="lazy" decoding="async" class="w-full h-40 object-cover rounded-xl" alt="Commercial battery bank — three parallel storage units with protected DC wiring">
       <h3 class="font-poppins font-semibold mt-4">Commercial & Industrial</h3>
       <p class="text-sm text-white/70 mt-1">20–250 kWh modular rack systems for retail, hospitality, healthcare, agriculture and manufacturing — with flexible commercial financing options available upon consultation.</p>
       <ul class="mt-3 text-xs text-white/70 space-y-1"><li>✓ Modular 5.12 kWh blocks • Scalable to 61 kWh</li><li>✓ Three-phase & parallel inverter support</li></ul>
       <div class="mt-4 text-xs font-semibold flex items-center gap-2">Projected ROI: 3–4 years <span class="opacity-30">|</span> <a href="#contact" class="text-solar cursor-pointer">Schedule Technical Audit →</a></div>
     </div>
     <div class="bg-white rounded-[20px] border border-slate-200 p-6 hover:shadow-lg transition-shadow">
-      <img src="assets/solar-2.jpg" loading="lazy" class="w-full h-40 object-cover rounded-xl" alt="Water solutions field deployment — outdoor system demonstration with panels">
+      <img src="assets/solar-2.webp" onerror="this.onerror=null;this.src='assets/solar-2.jpg'" loading="lazy" decoding="async" class="w-full h-40 object-cover rounded-xl" alt="Water solutions field deployment — outdoor system demonstration with panels">
       <h3 class="font-poppins font-semibold text-navy mt-4">Water & Borehole Solutions</h3>
       <p class="text-sm text-slate-500 mt-1">Solar-powered pumping systems including 5,000 L storage and structural stand. 1 HP AC configurations from USD 1,508; DC solar alternatives available for off-grid applications.</p>
       <ul class="mt-3 text-xs text-slate-600 space-y-1"><li>✓ 5000 L tank + steel stand + base plate</li><li>✓ AC pump, control box, safety rope</li></ul>
@@ -336,12 +339,12 @@ html{scroll-behavior:smooth; scroll-padding-top:84px}
       <div class="text-xs text-slate-500">Representative portfolio • Click to enlarge • <span class="hidden md:inline">All images from your verified SOLAR folder</span></div>
     </div>
     <div class="grid grid-cols-2 md:grid-cols-3 gap-3 mt-8">
-      <button onclick="openLightbox(0)" class="group overflow-hidden rounded-[18px] aspect-[4/3] relative text-left cursor-pointer"><img src="assets/solar-1.jpg" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Wall-mounted LiFePO4 stacked battery — white units with orange trim"><div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3 text-white text-xs font-semibold">Energy Storage — Stacked 10.2 kWh</div></button>
-      <button onclick="openLightbox(1)" class="group overflow-hidden rounded-[18px] aspect-[4/3] relative text-left cursor-pointer"><img src="assets/solar-2.jpg" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Field activation — outdoor exhibition canopy with demonstration systems"><div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3 text-white text-xs font-semibold">Field Deployment — Community Demonstration</div></button>
-      <button onclick="openLightbox(2)" class="group overflow-hidden rounded-[18px] aspect-[4/3] relative text-left cursor-pointer"><img src="assets/solar-3.jpg" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Three-unit parallel battery bank with DC cabling on tiled utility wall"><div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3 text-white text-xs font-semibold">Battery Bank — Parallel Installation</div></button>
-      <button onclick="openLightbox(3)" class="group overflow-hidden rounded-[18px] aspect-[4/3] relative text-left cursor-pointer"><img src="assets/solar-4.jpg" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Rooftop PV installation — technician in Felicity Solar uniform securing panels"><div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3 text-white text-xs font-semibold">Rooftop Array — Installation in Progress</div></button>
-      <button onclick="openLightbox(4)" class="group overflow-hidden rounded-[18px] aspect-[4/3] relative text-left cursor-pointer"><img src="assets/solar-5.jpg" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="FL-IVPL 48V hybrid inverter product graphic — 80-280V wide input voltage"><div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3 text-white text-xs font-semibold">Hybrid Inverter — FL-IVPL Specification</div></button>
-      <button onclick="openLightbox(5)" class="group overflow-hidden rounded-[18px] aspect-[4/3] relative text-left cursor-pointer"><img src="assets/solar-6.jpg" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Felicity Solar head office reception — 45 Glenara Avenue South"><div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3 text-white text-xs font-semibold">Head Office — Eastlea Reception</div></button>
+      <button onclick="openLightbox(0)" class="group overflow-hidden rounded-[18px] aspect-[4/3] relative text-left cursor-pointer"><img src="assets/solar-1.webp" onerror="this.onerror=null;this.src='assets/solar-1.jpg'" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Wall-mounted LiFePO4 stacked battery — white units with orange trim"><div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3 text-white text-xs font-semibold">Energy Storage — Stacked 10.2 kWh</div></button>
+      <button onclick="openLightbox(1)" class="group overflow-hidden rounded-[18px] aspect-[4/3] relative text-left cursor-pointer"><img src="assets/solar-2.webp" onerror="this.onerror=null;this.src='assets/solar-2.jpg'" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Field activation — outdoor exhibition canopy with demonstration systems"><div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3 text-white text-xs font-semibold">Field Deployment — Community Demonstration</div></button>
+      <button onclick="openLightbox(2)" class="group overflow-hidden rounded-[18px] aspect-[4/3] relative text-left cursor-pointer"><img src="assets/solar-3.webp" onerror="this.onerror=null;this.src='assets/solar-3.jpg'" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Three-unit parallel battery bank with DC cabling on tiled utility wall"><div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3 text-white text-xs font-semibold">Battery Bank — Parallel Installation</div></button>
+      <button onclick="openLightbox(3)" class="group overflow-hidden rounded-[18px] aspect-[4/3] relative text-left cursor-pointer"><img src="assets/solar-4.webp" onerror="this.onerror=null;this.src='assets/solar-4.jpg'" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Rooftop PV installation — technician in Felicity Solar uniform securing panels"><div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3 text-white text-xs font-semibold">Rooftop Array — Installation in Progress</div></button>
+      <button onclick="openLightbox(4)" class="group overflow-hidden rounded-[18px] aspect-[4/3] relative text-left cursor-pointer"><img src="assets/solar-5.webp" onerror="this.onerror=null;this.src='assets/solar-5.jpg'" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="FL-IVPL 48V hybrid inverter product graphic — 80-280V wide input voltage"><div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3 text-white text-xs font-semibold">Hybrid Inverter — FL-IVPL Specification</div></button>
+      <button onclick="openLightbox(5)" class="group overflow-hidden rounded-[18px] aspect-[4/3] relative text-left cursor-pointer"><img src="assets/solar-6.webp" onerror="this.onerror=null;this.src='assets/solar-6.jpg'" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Felicity Solar head office reception — 45 Glenara Avenue South"><div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3 text-white text-xs font-semibold">Head Office — Eastlea Reception</div></button>
     </div>
   </div>
 </section>
@@ -369,7 +372,7 @@ html{scroll-behavior:smooth; scroll-padding-top:84px}
     </div>
     <a href="https://zw.africabz.com/harare/felicity-solar-zimbabwe-271203" target="_blank" rel="noopener" class="inline-flex mt-3 text-xs font-bold text-cyan hover:underline cursor-pointer">Read all 7 on AfricaBz →</a>
     <div class="mt-4 bg-slate-50 border border-slate-200 rounded-2xl p-4 flex items-center gap-3">
-      <img src="assets/hero-1.jfif" class="w-10 h-10 rounded-full object-cover" alt=""><div><div class="text-sm font-semibold text-navy">Average rating 4.6/5 on independent platforms</div><div class="text-xs text-slate-500">Transparent, non-incentivized reviews — no paid placements</div></div>
+      <img src="assets/hero-1.webp" onerror="this.onerror=null;this.src='assets/hero-1.jfif'" class="w-10 h-10 rounded-full object-cover" alt=""><div><div class="text-sm font-semibold text-navy">Average rating 4.6/5 on independent platforms</div><div class="text-xs text-slate-500">Transparent, non-incentivized reviews — no paid placements</div></div>
     </div>
   </div>
 </section>
@@ -408,7 +411,7 @@ html{scroll-behavior:smooth; scroll-padding-top:84px}
         <div class="bg-white/10 rounded-2xl p-3 border border-white/10"><div class="font-bold text-eco">24h</div><div class="text-xs">Quote reply</div></div>
       </div>
       <div class="mt-6 rounded-2xl overflow-hidden border border-white/10 bg-white/5">
-        <iframe title="Map — 45 Glenara Ave S, Eastlea Harare" src="https://www.openstreetmap.org/export/embed.html?bbox=31.05%2C-17.83%2C31.08%2C-17.81&layer=mapnik&marker=-17.82%2C31.065" class="w-full h-56 border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe title="Map — 45 Glenara Ave S, Eastlea Harare" src="https://www.openstreetmap.org/export/embed.html?bbox=31.05%2C-17.83%2C31.08%2C-17.81&layer=mapnik&marker=-17.82%2C31.065" class="w-full h-56 border-0" loading="lazy" decoding="async" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="px-4 py-2 flex justify-between items-center text-xs"><span class="text-white/70">OpenStreetMap • Eastlea, Harare — indicative location</span><a href="https://www.openstreetmap.org/?mlat=-17.82&mlon=31.065#map=16/-17.82/31.065" target="_blank" rel="noopener" class="text-solar font-bold hover:underline">View larger map</a></div>
       </div>
       <div class="mt-4 bg-white/10 border border-white/10 rounded-2xl p-4">
@@ -450,9 +453,10 @@ html{scroll-behavior:smooth; scroll-padding-top:84px}
         <div class="mt-4 flex flex-wrap gap-2 text-xs"><a href="https://facebook.com/felicitysolarzim" target="_blank" rel="noopener" class="bg-white/10 hover:bg-white/15 px-3 py-1.5 rounded-full transition-colors">Facebook</a><a href="https://www.felicitysolar.co.zw" target="_blank" rel="noopener" class="bg-white/10 hover:bg-white/15 px-3 py-1.5 rounded-full transition-colors">Website</a><span class="bg-white/10 px-3 py-1.5 rounded-full">45 Glenara Ave S, Eastlea</span></div>
       </div>
       <div class="text-xs space-y-2"><div class="font-bold text-white tracking-wide">EXPLORE</div><a href="#about" class="block hover:text-white cursor-pointer">About Us</a><a href="#products" class="block hover:text-white cursor-pointer">Product Portfolio</a><a href="#solutions" class="block hover:text-white cursor-pointer">Solutions</a><a href="#projects" class="block hover:text-white cursor-pointer">Project Gallery</a><a href="#faq" class="block hover:text-white cursor-pointer">FAQ</a></div>
-      <div class="text-xs space-y-2"><div class="font-bold text-white tracking-wide">LEGAL & PROPOSAL</div><div>© 2026 Felicity Solar Zimbabwe (Private) Limited</div><div>All specs: verify with store manager before purchase.</div><button onclick="toast('Privacy & Terms — available on formal proposal document.')" class="underline hover:text-white cursor-pointer">Privacy • Terms</button><div class="pt-2"><label class="font-bold text-white">Newsletter</label><form id="newsForm" class="mt-1 flex gap-2"><input required type="email" placeholder="email@company.co.zw" class="flex-1 rounded-full px-3 py-2 text-xs text-navy focus:outline-none"><button class="bg-solar text-navy font-bold px-4 py-2 rounded-full text-xs hover:bg-solar-dark cursor-pointer">Join</button></form><p class="text-[11px] text-white/50 mt-1">Monthly product & tariff updates — unsubscribe anytime.</p></div></div>
+      <div class="text-xs space-y-2"><div class="font-bold text-white tracking-wide">LEGAL & PROPOSAL</div><div>© 2026 Felicity Solar Zimbabwe (Private) Limited • Web crafted by <a href="https://github.com/noeljaywolf-create/noel-digital-agency" target="_blank" rel="noopener" class="text-white hover:text-solar underline">Noel Digital Agency</a></div><div>All specs: verify with store manager before purchase.</div><button onclick="toast('Privacy & Terms — available on formal proposal document.')" class="underline hover:text-white cursor-pointer">Privacy • Terms</button><div class="pt-2"><label class="font-bold text-white">Newsletter</label><form id="newsForm" class="mt-1 flex gap-2"><input required type="email" placeholder="email@company.co.zw" class="flex-1 rounded-full px-3 py-2 text-xs text-navy focus:outline-none"><button class="bg-solar text-navy font-bold px-4 py-2 rounded-full text-xs hover:bg-solar-dark cursor-pointer">Join</button></form><p class="text-[11px] text-white/50 mt-1">Monthly product & tariff updates — unsubscribe anytime.</p></div></div>
     </div>
     <div class="mt-8 pt-6 border-t border-white/10 flex flex-wrap justify-between gap-4 text-[11px]"><span>Proposal prepared 25 August 2026 • Valid 30 days • Prices in USD • ZWL equivalent at bank rate • Demo site — not yet indexed</span><span class="flex gap-3"><span>● Harare</span><span>● Guangzhou</span><span>● Miami</span></span></div>
+    <div class="mt-4 text-center text-[11px] text-white/50">Web crafted by <a href="https://github.com/noeljaywolf-create/noel-digital-agency" target="_blank" rel="noopener" class="text-solar hover:text-white font-semibold underline underline-offset-2">Noel Digital Agency</a> • Harare, Zimbabwe • <a href="https://wa.me/263719187878" class="hover:text-white">Contact Studio</a></div></div>
   </div>
 </footer>
 
@@ -469,7 +473,10 @@ $('#backTop').onclick=()=>window.scrollTo({top:0, behavior:'smooth'});
 function toast(msg){ const wrap=$('#toastWrap'); const el=document.createElement('div'); el.className='bg-navy text-white text-sm font-semibold px-5 py-3 rounded-full shadow-xl border border-white/10 pointer-events-auto'; el.textContent=msg; wrap.appendChild(el); setTimeout(()=>{ el.style.opacity='0'; el.style.transform='translateY(-8px)'; setTimeout(()=>el.remove(),300); }, 3500); }
 document.querySelectorAll('.filterBtn').forEach(btn=>{ btn.addEventListener('click',()=>{ document.querySelectorAll('.filterBtn').forEach(b=>{ b.className='filterBtn bg-slate-100 hover:bg-slate-200 text-navy px-5 py-2 rounded-full text-sm font-semibold cursor-pointer';}); btn.className='filterBtn bg-navy text-white px-5 py-2 rounded-full text-sm font-bold cursor-pointer'; const f=btn.dataset.filter; document.querySelectorAll('.productCard').forEach(c=>{ c.style.display=(f==='all'||c.dataset.cat===f)?'block':'none'; }); }); });
 document.querySelectorAll('.faqBtn').forEach(btn=>{ btn.addEventListener('click',()=>{ const ans=btn.nextElementSibling; const icon=btn.querySelector('svg'); const open=!ans.classList.contains('hidden'); document.querySelectorAll('.faqAns').forEach(a=>a.classList.add('hidden')); document.querySelectorAll('.faqBtn svg').forEach(s=>s.style.transform=''); if(!open){ ans.classList.remove('hidden'); icon.style.transform='rotate(180deg)'; } }); });
-const v=$('#heroVideo'), vp=$('#vidPause'), vm=$('#vidMute'); if(v){ vp.onclick=()=>{ if(v.paused){ v.play(); vp.innerHTML='<svg class=\"w-4 h-4\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><rect x=\"6\" y=\"5\" width=\"4\" height=\"14\" rx=\"1\"/><rect x=\"14\" y=\"5\" width=\"4\" height=\"14\" rx=\"1\"/></svg>'; } else { v.pause(); vp.innerHTML='<svg class=\"w-4 h-4\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M8 5v14l11-7z\"/></svg>'; } }; vm.onclick=()=>{ v.muted=!v.muted; vm.style.opacity=v.muted? '0.6': '1'; }; v.addEventListener('error',()=>v.style.display='none'); }
+const v=$('#heroVideo'), vp=$('#vidPause'), vm=$('#vidMute'); if(v){ vp.onclick=()=>{ if(v.paused){ v.play(); vp.innerHTML='<svg class=\"w-4 h-4\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><rect x=\"6\" y=\"5\" width=\"4\" height=\"14\" rx=\"1\"/><rect x=\"14\" y=\"5\" width=\"4\" height=\"14\" rx=\"1\"/></svg>'; } else { v.pause(); vp.innerHTML='<svg class=\"w-4 h-4\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M8 5v14l11-7z\"/></svg>'; } }; vm.onclick=()=>{ v.muted=!v.muted; vm.style.opacity=v.muted? '0.6': '1'; }; v.addEventListener('error',()=>v.style.display='none');
+// Speed: respect Save-Data / slow connection - pause video autoplay and use poster only
+try{ const conn=navigator.connection||navigator.mozConnection||navigator.webkitConnection; if(conn && (conn.saveData || /2g/.test(conn.effectiveType))){ v.removeAttribute('autoplay'); v.pause(); toast('Data saver detected — video paused for faster loading.'); } }catch(e){}
+// Defer offscreen images via native lazy already, add fetchpriority high for LCP }
 (function(){ const el=$('#liveStatus'); const openEl=$('#openStatus'); function upd(){ const now=new Date(); const day=now.getDay(); const hr=now.getHours(); const min=now.getMinutes(); const mins=hr*60+min; const isWeekday=day>=1&&day<=5; const isSat=day===6; const open=(isWeekday&&mins>=480&&mins<1020)||(isSat&&mins>=480&&mins<840); const txt=open? '● Open Now':'● Closed'; if(el) el.textContent=txt+' — Mon-Fri 08:00-17:00 • Sat 08:00-14:00'; if(openEl){ openEl.textContent=open? 'OPEN NOW':'CLOSED'; openEl.className=open?'text-eco font-bold':'text-amber-400 font-bold'; } } upd(); setInterval(upd,60000); })();
 (function(){ const beds=$('#estBeds'), bore=$('#estBore'), res=$('#estResult'); function calc(){ const b=parseInt(beds.value); const br=parseInt(bore.value); let kva=3, kwh=5.12, price=2450; if(b>=3){ kva=5; kwh=10.24; price=4200; } if(b>=4){ kva=6; kwh=15.36; price=5800; } if(br) price+=800; res.textContent=kva+' kVA + '+kwh.toFixed(2)+' kWh • ~USD '+price.toLocaleString(); } beds.addEventListener('change',calc); bore.addEventListener('change',calc); calc(); })();
 const gallery=['assets/solar-1.jpg','assets/solar-2.jpg','assets/solar-3.jpg','assets/solar-4.jpg','assets/solar-5.jpg','assets/solar-6.jpg'];
